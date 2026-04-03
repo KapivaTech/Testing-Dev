@@ -1,0 +1,11 @@
+name: Claude Code Metrics
+
+on:
+  schedule:
+    - cron: '0 14 * * 5'
+  workflow_dispatch:
+
+jobs:
+  metrics:
+    uses: KapivaTech/.github/.github/workflows/metrics-shared.yml@main
+    secrets: inherit
