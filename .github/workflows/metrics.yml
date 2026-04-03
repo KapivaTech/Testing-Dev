@@ -8,4 +8,5 @@ on:
 jobs:
   metrics:
     uses: KapivaTech/actions-workflows/.github/workflows/metrics-shared.yml@main
-    secrets: inherit
+    secrets:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
